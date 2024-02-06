@@ -24,7 +24,7 @@ The application fulfills the following functionalities:
 This repository is divided into two main sections:
 
 - `frontend`: Contains the Angular application with NG Prime components. See [FRONTEND_README.md](./frontend/FRONTEND_README.md) for details.
-- `backend`: Holds the Node.js and Express.js server code integrating with Firebase. See [BACKEND_README.md]([./backend/BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend)) for more information.
+- `backend`: Holds the Node.js and Express.js server code integrating with Firebase. See [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend) for more information.
 
 ## Getting Started
 
