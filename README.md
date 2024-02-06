@@ -23,14 +23,14 @@ The application fulfills the following functionalities:
 
 This repository is divided into two main sections:
 
-- `frontend`: Contains the Angular application with NG Prime components. See [FRONTEND_README.md](./frontend/FRONTEND_README.md) for details.
-- `backend`: Holds the Node.js and Express.js server code integrating with Firebase. See [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend) for more information.
+- `frontend`: Contains the Angular application with NG Prime components. See [FRONTEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/frontend#readme) for details.
+- `backend`: Holds the Node.js and Express.js server code integrating with Firebase. See [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend#readme) for more information.
 
 ## Getting Started
 
 To get started with this project, you will need to set up both the frontend and backend portions of the application. Each part comes with its own README.md file that contains detailed instructions for setup, configuration, and usage.
 
-- For frontend setup, please refer to [FRONTEND_README.md](./frontend/FRONTEND_README.md).
-- For backend setup and configuration, see [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend).
+- For frontend setup, please refer to [FRONTEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/frontend#readme).
+- For backend setup and configuration, see [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend#readme).
 
 Please follow the instructions in these files to get the application up and running on your local development environment.
