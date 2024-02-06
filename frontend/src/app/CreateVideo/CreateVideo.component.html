@@ -1,0 +1,53 @@
+<div class="create-video">
+  <!-- Conditional rendering for preview and review states -->
+  <div *ngIf="showPreview" class="camera-preview">
+    <!-- Camera Preview Placeholder -->
+    <video #preview autoplay muted></video>
+  </div>
+  <ng-container *ngIf="!showPreview">
+    <div class="video-preview">
+      <!-- Video Playback -->
+      <video [src]="videoSrc" controls></video>
+    </div>
+    <!-- Action Buttons for Video Review -->
+    <div class="action-buttons">
+      <!-- Upload Button -->
+      <button
+        pButton
+        type="button"
+        (click)="uploadVideo()"
+        label="Upload"
+        icon="pi pi-upload"
+        [disabled]="isUploading || showPreview"
+        styleClass="p-button-success p-button-rounded"
+      ></button>
+      <!-- Redo Button -->
+      <button
+        pButton
+        type="button"
+        (click)="redoRecording()"
+        label="Redo"
+        icon="pi pi-refresh"
+        [disabled]="isUploading || showPreview"
+        styleClass="p-button-warning p-button-rounded"
+      ></button>
+    </div>
+    <!-- Optional: Progress Spinner for Upload -->
+    <div *ngIf="isUploading" class="progress-spinner">
+      <p-progressSpinner></p-progressSpinner>
+    </div>
+  </ng-container>
+
+  <!-- 'Start Recording' Button -->
+  <div *ngIf="showPreview" class="start-recording">
+    <button
+      pButton
+      type="button"
+      (click)="toggleRecording()"
+      label="{{ isRecording ? 'Stop Recording' : 'Start Recording' }}"
+      styleClass="p-button-rounded"
+    ></button>
+  </div>
+
+  <p-toast></p-toast>
+</div>

@@ -1,0 +1,60 @@
+.create-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+
+  .camera-preview,
+  .video-preview {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    background-color: #000;
+    margin: 1rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+
+    .p-button {
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .start-recording {
+    .p-button {
+      background-color: #007bff; // Example color, adjust based on your theme
+      color: #ffffff;
+      &:hover {
+        background-color: darken(#007bff, 5%);
+      }
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .progress-spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

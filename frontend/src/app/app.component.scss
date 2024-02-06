@@ -1,0 +1,21 @@
+.ui-sidebar-md .ui-sidebar {
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    a {
+      display: block;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}

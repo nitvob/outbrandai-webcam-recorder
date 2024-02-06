@@ -1,0 +1,43 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh; // Full viewport height
+}
+
+.nav-sidebar {
+  width: 200px; // Adjust based on your preference
+  background-color: #f0f0f0; // Light gray background
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; // Allow the list to fill the space
+
+    li a,
+    li button {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      background: none;
+      border: none;
+      text-align: left; // Align text for buttons like for anchor tags
+
+      &:hover {
+        background-color: #ddd; // Light hover effect
+      }
+    }
+
+    .logout-spacing {
+      flex-grow: 1; // Push everything below it to the bottom
+    }
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px; // Space around the content
+  overflow-y: auto; // Scrollable content
+}

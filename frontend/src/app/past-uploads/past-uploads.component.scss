@@ -1,0 +1,66 @@
+.past-uploads {
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .video-entry {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .video-info {
+      h3 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #666;
+      }
+    }
+
+    .view-button {
+      margin-top: 10px;
+      align-self: center;
+    }
+  }
+
+  // Modal styling remains unchanged
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 640px;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  iframe {
+    width: 100%;
+    height: 360px;
+  }
+}

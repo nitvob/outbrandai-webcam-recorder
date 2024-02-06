@@ -1,0 +1,33 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 24px;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    color: #555;
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+  }
+}

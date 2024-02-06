@@ -1,0 +1,26 @@
+<div class="past-uploads">
+  <h2>Past Uploads</h2>
+  <div class="video-grid">
+    <div class="video-entry" *ngFor="let upload of uploads">
+      <div class="video-info">
+        <h3>Uploaded: {{ upload.uploadDateTime | date : "medium" }}</h3>
+      </div>
+      <button
+        pButton
+        (click)="openModal(upload.url)"
+        label="View Upload"
+        icon="pi pi-eye"
+        class="view-button"
+      ></button>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <!-- Modal Structure -->
+  <div *ngIf="showModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <video #videoPlayer controls [src]="currentVideoUrl | safeUrl"></video>
+    </div>
+  </div>
+</div>
