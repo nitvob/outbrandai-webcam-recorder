@@ -31,6 +31,6 @@ This repository is divided into two main sections:
 To get started with this project, you will need to set up both the frontend and backend portions of the application. Each part comes with its own README.md file that contains detailed instructions for setup, configuration, and usage.
 
 - For frontend setup, please refer to [FRONTEND_README.md](./frontend/FRONTEND_README.md).
-- For backend setup and configuration, see [BACKEND_README.md](./backend/BACKEND_README.md).
+- For backend setup and configuration, see [BACKEND_README.md](https://github.com/nitvob/outbrandai-webcam-recorder/tree/main/backend).
 
 Please follow the instructions in these files to get the application up and running on your local development environment.
