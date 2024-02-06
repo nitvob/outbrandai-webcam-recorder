@@ -14,7 +14,7 @@ import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { PastUploadsComponent } from './past-uploads/past-uploads.component';
-import { SafeUrlPipe } from './safe-url.pipe';
+import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
